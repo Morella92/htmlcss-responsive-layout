@@ -128,6 +128,10 @@ a{
     .title_planning1{
         font-size: 90px;
     }
+
+    .bg_testimonials{
+        margin: 20px;
+    }
 }
 /* MEDIAQUERY PHONE */
 
@@ -140,6 +144,24 @@ a{
 
     .col_development2{
         padding-top: 50px;
+    }
+
+    .col_development1, .bg_development2{
+        margin: 30px;
+    }
+
+    .row_testimonials{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img_testimonials{
+        padding-bottom: 0;
+    }
+
+    .p_testimonials{
+        padding-top: 0;
     }
 }
 /* HERO RULES */
@@ -250,4 +272,50 @@ a{
 
 .title_planning1, .title_planning2{
     font-size: 25px;
+}
+
+/* TESTIMONIALS SECTION */
+
+.testimonials{
+    margin-top: 65px;
+}
+
+.testimonials_content{
+    text-align: center;
+    line-height: 35px;
+}
+
+.title_testimonials{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--purple);
+    padding: 40px 0;
+}
+
+.margin_p{
+    margin-bottom: 55px;
+}
+.bg_testimonials{
+    background-color: var(--purple);
+    border-radius: 40px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.col_testimonials{
+    padding: 40px 20px;
+}
+
+.img_testimonials{
+    width: 200px;
+    border-radius: 999px;
+}
+
+.p_testimonials{
+    padding-top: 40px;
+    line-height: 25px;
+}
+
+.name_testimonials{
+    padding-top: 20px;
 }
