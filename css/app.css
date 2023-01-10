@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+ol, ul, li, menu{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+:root{
+    --blue:#0084FD;
+    --lightblue:#B5DDFF;
+    --purple:#9792E4;
+    --dark:#333333;
+    --yellow:#FDC15F;
+    --grey:#5A6E7F;
+}
+
+/* CONTAINER */
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.container_small{
+
+}
+
+/* ROW */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row_first-card{
+    display: flex;
+}
+
+/* BUTTON RULES */
+
+.button{
+    border-radius: 999px;
+    
+}
+
+.button_white {
+    background-color: white;
+    color: black;
+}
+
+.button_blue{
+    border-color: var(--blue);
+    background-color: var(--blue);
+    color: white;
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+/* HEADER RULES */
+
+.bg_header{
+    background-color: var(--blue);
+    padding: 19px 0;
+}
+
+.bg_header nav.row{
+    align-items: center;
+}
+
+.header_items{
+    justify-content: space-between;
+}
+
+.list_items{
+    color: white;
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+.hamburger{
+    display: none;
+    color: white;
+}
+
+/* MEDIAQUERY TABLET */
+
+@media screen and (max-width:991px) {
+
+    .hamburger{
+        display: block;
+    }
+
+    .header-nav{
+        display: none;
+    }
+}
+
+/* MEDIAQUERY PHONE */
+
+@media screen and (max-width:575px) {
+
+    .hero [class^="col-"]{
+        width: 100%;
+    }
+}
+/* HERO RULES */
+
+.card{
+    background-color: var(--lightblue);
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 55px;
+}
+
+.col-first{
+    flex-basis: calc(100% * (2/3));
+}
+
+.col-3{
+    flex-basis: calc(100% / 3);
+}
+
+.title-card-hero{
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.p-card-hero{
+    color: var(--grey);
+    font-weight: 400;
+    line-height: 25px;
+    padding: 30px 0;
+}
+
+.phone_image{
+    width: 190px;
+    padding-top: 25px;
+}
+
+.card-hero{
+    text-align: center;
+}
+
+.hero-icons{
+    color: var(--blue);
+    font-size: 60px;
+    padding-bottom: 25px;
+}
