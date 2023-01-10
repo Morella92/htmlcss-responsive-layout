@@ -109,23 +109,32 @@ a{
     .header-nav{
         display: none;
     }
+
+    .row_first-card{
+        flex-direction: column;
+    }
 }
 
 /* MEDIAQUERY PHONE */
 
 @media screen and (max-width:575px) {
 
-    .hero [class^="col-"]{
-        width: 100%;
+    .row_hero{
+        flex-direction: column;
+        flex-basis: 100%;
     }
 }
 /* HERO RULES */
+.row_hero{
+    display: flex;
+}
 
 .card{
     background-color: var(--lightblue);
     padding: 30px;
     border-radius: 20px;
     margin-top: 55px;
+    margin-right: 22px;
 }
 
 .col-first{
