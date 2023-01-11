@@ -56,6 +56,10 @@ a{
     flex-wrap: wrap;
 }
 
+.row_benefits{
+    gap: 20px;
+}
+
 .row_first-card{
     display: flex;
 }
@@ -128,86 +132,7 @@ a{
     color: white;
 }
 
-/* MEDIAQUERY TABLET */
 
-@media screen and (max-width:991px) {
-
-    .hamburger{
-        display: block;
-    }
-
-    .header-nav{
-        display: none;
-    }
-
-    .row_first-card, .row_development{
-        flex-direction: column;
-    }
-
-    .col_development1, .col_development2{
-        text-align: center;
-        padding-bottom: 40px;
-    }
-
-    .planning1, .planning2{
-        width: 700px;
-    }
-
-    .title_planning1{
-        font-size: 90px;
-    }
-
-    .col_benefits{
-        flex-basis: calc(100% / 2);
-    }
-}
-/* MEDIAQUERY PHONE */
-
-@media screen and (max-width:575px) {
-
-    .hero{
-        padding-bottom: 80px;
-    }
-
-    .row_hero, .row_benefits, .row_about{
-        flex-direction: column;
-        flex-basis: 100%;
-    }
-
-    .col_phone{
-        text-align: center;
-    }
-
-    .col_development2{
-        padding-top: 50px;
-    }
-
-    .col_development1, .bg_development2{
-        margin: 30px;
-    }
-
-    .row_testimonials{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .img_testimonials{
-        padding-bottom: 0;
-    }
-
-    .p_testimonials{
-        padding-top: 0;
-    }
-
-    .img_about{
-        width: 200px;
-    }
-
-    .icon_about{
-        right: 20px;
-    }
-}
 /* HERO RULES */
 .hero{
     padding: 50px 0 100px;
@@ -230,14 +155,24 @@ a{
     border-radius: 20px;
 }
 
+.card_landscape{
+    background-color: var(--lightblue);
+    border-radius: 20px;
+}
+
+.col_first_card{
+    padding: 32px 24px;
+}
+
 .col-first{
     flex-basis: calc(100% * (2/3));
 }
 
 .col_phone{
-    padding-bottom: 0;
+    align-self: flex-end;
 }
 .phone_image{
+    display: block;
     width: 250px;
     padding-top: 25px;
 }
@@ -392,7 +327,7 @@ a{
 }
 
 .col_benefits{
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 3 - 40px / 3);
 }
 
 .bg_benefits{
@@ -524,4 +459,105 @@ a{
 .link_footer{
     color: var(--purple);
     text-decoration: underline;
+}
+
+/* MEDIAQUERY TABLET */
+
+@media screen and (max-width:991px) {
+
+    .hamburger{
+        display: block;
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+    .row_first-card, .row_development{
+        flex-direction: column;
+    }
+
+    .col_phone{
+        align-self: flex-start;
+    }
+
+    .col_development1, .col_development2{
+        text-align: center; 
+    }
+
+    .col_development2{
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+
+    .planning1, .planning2{
+        width: 700px;
+    }
+
+    .title_planning1{
+        font-size: 90px;
+    }
+
+    .col_benefits{
+        flex-basis: calc(100% / 2 - 20px);
+    }
+}
+/* MEDIAQUERY PHONE */
+
+@media screen and (max-width:575px) {
+
+    .hero{
+        padding-bottom: 80px;
+    }
+
+    .row_hero, .row_benefits, .row_about{
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    .col_phone{
+        align-self: center;
+    }
+
+    .col_development2{
+        padding-top: 50px;
+    }
+
+    .col_development1, .bg_development2{
+        margin: 30px;
+    }
+
+    .planning1, .planning2{
+        width: 400px;
+    }
+
+    .title_planning1{
+        font-size: 50px;
+    }
+
+    .row_testimonials{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .col_testimonials{
+        padding: 10px 10px;
+    }
+
+    .img_testimonials{
+        padding-bottom: 0;
+    }
+
+    .p_testimonials{
+        padding-top: 0;
+    }
+
+    .position_about{
+        width: 200px;
+    }
+
+    .icon_about{
+        right: 20px;
+    }
 }
