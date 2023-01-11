@@ -31,12 +31,18 @@ a{
 
 /* CONTAINER */
 .container{
-    max-width: 1140px;
+    max-width: 1180px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .container_small{
     max-width: 900px;
+    margin: 0 auto;
+}
+
+.container_xsmall{
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -46,7 +52,7 @@ a{
     display: flex;
 }
 
-.row_hero{
+.row_hero, .row_benefits{
     flex-wrap: wrap;
 }
 
@@ -72,6 +78,27 @@ a{
     line-height: 38px;
     font-size: 16px;
     padding: 0 16px;
+}
+
+.button_purple{
+    background-color: var(--purple);
+    color: white;
+    padding: 15px 40px;
+    font-weight: 700;
+    font-size: 16px;
+    border-color: var(--purple);
+}
+
+.button_about{
+    padding: 5px 15px;
+}
+
+.button_start{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--purple);
+    border-color: white;
+    padding: 5px 30px;
 }
 
 /* HEADER RULES */
@@ -119,6 +146,7 @@ a{
 
     .col_development1, .col_development2{
         text-align: center;
+        padding-bottom: 40px;
     }
 
     .planning1, .planning2{
@@ -129,17 +157,25 @@ a{
         font-size: 90px;
     }
 
-    .bg_testimonials{
-        margin: 20px;
+    .col_benefits{
+        flex-basis: calc(100% / 2);
     }
 }
 /* MEDIAQUERY PHONE */
 
 @media screen and (max-width:575px) {
 
-    .row_hero{
+    .hero{
+        padding-bottom: 80px;
+    }
+
+    .row_hero, .row_benefits, .row_about{
         flex-direction: column;
         flex-basis: 100%;
+    }
+
+    .col_phone{
+        text-align: center;
     }
 
     .col_development2{
@@ -163,22 +199,47 @@ a{
     .p_testimonials{
         padding-top: 0;
     }
+
+    .img_about{
+        width: 200px;
+    }
+
+    .icon_about{
+        right: 20px;
+    }
 }
 /* HERO RULES */
+.hero{
+    padding: 50px 0 100px;
+}
 .row_hero{
     display: flex;
 }
 
+.row.gutter{
+    row-gap: 24px;
+    margin: 0 -12px;
+}
+
+.row.gutter > [class^='col'] {
+    padding: 0 12px;
+}
 .card{
     background-color: var(--lightblue);
-    padding: 30px;
+    padding: 32px 24px;
     border-radius: 20px;
-    margin-top: 55px;
-    margin-right: 22px;
 }
 
 .col-first{
     flex-basis: calc(100% * (2/3));
+}
+
+.col_phone{
+    padding-bottom: 0;
+}
+.phone_image{
+    width: 250px;
+    padding-top: 25px;
 }
 
 .col-3{
@@ -193,17 +254,13 @@ a{
 .p-card-hero{
     color: var(--grey);
     font-weight: 400;
-    line-height: 25px;
+    line-height: 1.7em;
     padding: 30px 0;
-}
-
-.phone_image{
-    width: 190px;
-    padding-top: 25px;
 }
 
 .card-hero{
     text-align: center;
+    height: 100%;
 }
 
 .hero-icons{
@@ -216,7 +273,6 @@ a{
 
 .development{
     background-color: var(--purple);
-    margin-top: 100px;
 }
 
 .col_development1{
@@ -318,4 +374,154 @@ a{
 
 .name_testimonials{
     padding-top: 20px;
+}
+
+/* BENEFITS SECRION */
+
+.benefits{
+    background-color: var(--purple);
+    padding-bottom: 40px;
+}
+
+.title_benefits{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 40px;
+}
+
+.col_benefits{
+    flex-basis: calc(100% / 3);
+}
+
+.bg_benefits{
+    background-color: white;
+    border-radius: 20px;
+}
+
+.card_benefits{
+    padding: 40px 20px 20px;
+    height: 100%;
+    line-height: 30px;
+}
+
+.icon_benefits{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--purple);
+    padding-bottom: 20px;
+}
+
+.benefits_titles{
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.p_benefits{
+    color: var(--grey);
+    padding-bottom: 20px;
+}
+
+/* ABOUT US */
+
+.about{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.row_about{
+    column-gap: 60px;
+}
+.about_title{
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.p_about{
+    line-height: 1.7em;
+    padding: 30px 0;
+}
+
+.img_about{
+    border-radius: 999px;
+    padding-bottom: 10px;
+}
+
+.p_img{
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.position_about{
+    position: relative;
+}
+
+.icon_about{
+    font-size: 70px;
+    color: var(--purple);
+    position: absolute;
+    right: 0;
+}
+
+/* GET STARTED SECTION */
+
+.get-started{
+    background-color: var(--purple);
+}
+
+.start{
+    padding: 40px;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+
+.start_subtitle{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.start_title{
+    color: var(--yellow);
+    font-size: 80px;
+    padding-bottom: 30px;
+}
+
+.fa-circle{
+    font-size: 7px;
+}
+
+.privacy{
+    text-decoration: underline;
+}
+
+/* FOOTER SECTION */
+
+.footer_section{
+    background-color: var(--dark);
+}
+
+.paragraph{
+    padding: 25px;
+    text-align: center;
+}
+
+.p1_footer{
+    padding-bottom: 40px;
+    color: white;
+}
+
+.p2_footer{
+    color: white;
+}
+
+.link_footer{
+    color: var(--purple);
+    text-decoration: underline;
 }
