@@ -276,6 +276,11 @@ a{
     line-height: 35px;
 }
 
+.testimonials_subtitle{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
 .title_testimonials{
     font-size: 40px;
     font-weight: 700;
@@ -288,7 +293,7 @@ a{
 }
 .bg_testimonials{
     background-color: var(--purple);
-    border-radius: 40px;
+    border-radius: 50px;
     color: white;
     margin-bottom: 30px;
 }
@@ -299,21 +304,19 @@ a{
 
 .img_testimonials{
     border-radius: 50%;
-    height: 200px;
     width: 200px;
+    aspect-ratio: 1;
     object-fit: cover;
+    object-position: center;
 }
 
 .p_testimonials{
     padding-top: 40px;
     line-height: 25px;
+    margin-bottom: 32px;
 }
 
-.name_testimonials{
-    padding-top: 20px;
-}
-
-/* BENEFITS SECRION */
+/* BENEFITS SECTION */
 
 .benefits{
     background-color: var(--purple);
