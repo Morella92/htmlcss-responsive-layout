@@ -475,6 +475,7 @@ a{
         display: none;
     }
 
+    /* MEDIAQUERY TABLET HERO */
     .row_first-card, .row_development{
         flex-direction: column;
     }
@@ -483,6 +484,7 @@ a{
         align-self: flex-start;
     }
 
+    /* MEDIAQUERY TABLET DEVELOPMENT */
     .col_development1, .col_development2{
         text-align: center; 
     }
@@ -500,6 +502,7 @@ a{
         font-size: 90px;
     }
 
+    /* MEDIAQUERY TABLET BENEFITS */
     .col_benefits{
         flex-basis: calc(100% / 2 - 20px);
     }
@@ -520,7 +523,7 @@ a{
     .col_phone{
         align-self: center;
     }
-
+    /* MEDIAQUERY PHONE DEVELOPMENT */
     .col_development2{
         padding-top: 50px;
     }
@@ -536,7 +539,7 @@ a{
     .title_planning1{
         font-size: 50px;
     }
-
+/* MEDIAQUERY PHONE TESTIMONIALS */
     .row_testimonials{
         flex-direction: column;
         align-items: center;
@@ -554,7 +557,7 @@ a{
     .p_testimonials{
         padding-top: 0;
     }
-
+/* MEDIAQUERY PHONE ABOUT */
     .position_about{
         width: 200px;
     }
